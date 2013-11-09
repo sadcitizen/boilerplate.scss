@@ -1,3 +1,31 @@
 /*
- *
+ * Каркас для иконок
  */
+
+@step: 10px; // шаг сетки
+
+.icon {
+	.bg(url(/path/to/sprite.png) 0 0 no-repeat);
+	.size(16px);
+
+	&.icon-24 {
+		.size(24px);
+	}
+
+	&.icon-32 {
+		.size(32px);
+	}
+
+	&.icon-64 {
+		.size(64px);
+	}
+
+	&.icon-sample {
+		.sprite(@step, 0, 0);
+	}
+
+	&.icon-star {
+		.sprite(@step, 1, 0);
+	}
+
+}
