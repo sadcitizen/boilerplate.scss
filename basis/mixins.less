@@ -1,5 +1,5 @@
 /*
- * Примеси
+ * Mixins
  */
 
 .bg (@color) {
@@ -16,6 +16,10 @@
 
 .border (@color) {
 	border: 1px solid @color;
+}
+
+.border (top, @color) {
+	border-top: 1px solid @color;
 }
 
 .border (right, @color) {
