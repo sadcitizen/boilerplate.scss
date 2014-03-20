@@ -1,0 +1,38 @@
+/**
+ * Positioning
+ */
+.center (@width, @height, @position: absolute) {
+    position: @position;
+    top: 50%;
+    left: 50%;
+    margin: round(@height * -0.5) 0 0 round(@width * -0.5);
+}
+
+.center(block, @top: 0, @bottom: 0) {
+    .is-block();
+    margin: @top auto @bottom auto;
+}
+
+.is-left() {
+    float: left;
+}
+
+.is-right() {
+    float: right;
+}
+
+.fill (@position: absolute, @margin: 0px) {
+    position: @position;
+    top: @margin;
+    right: @margin;
+    bottom: @margin;
+    left: @margin;
+}
+
+.fill (@position: absolute, @top, @right, @bottom, @left) {
+    position: @position;
+    top: @top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+}

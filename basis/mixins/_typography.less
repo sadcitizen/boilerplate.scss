@@ -1,0 +1,62 @@
+/**
+ * Typography
+ */
+
+.is-indented(@indent: -9999px) when (isnumber(@indent)) {
+    text-indent: @indent;
+}
+
+.font(sans, @font, @size: 14px, @line: 21px, @weight: normal) {
+    font: @weight ~"@{size}/@{line}" @font, @font-family-sans-serif;
+}
+
+.font(serif, @font, @size: 14px, @line: 21px, @weight: normal) {
+    font: @weight ~"@{size}/@{line}" @font, @font-family-serif;
+}
+
+.font(mono, @font, @size: 14px, @line: 21px, @weight: normal) {
+    font: @weight ~"@{size}/@{line}" @font, @font-family-mono;
+}
+
+.font-family(sans, @font) {
+    font-family: @font, @font-family-sans-serif;
+}
+
+.font-family(serif, @font) {
+    font-family: @font, @font-family-serif;
+}
+
+.font-family(mono, @font) {
+    font-family: @font, @font-family-mono;
+}
+
+.font-size(@size, @line) when (isnumber(@size)) and (ispixel(@line)) {
+    font-size: @size;
+    line-height: @line;
+}
+
+.font-size(@size, @line) when
+    (isnumber(@size))
+    and (isnumber(@line))
+    and not (ispixel(@line))
+    and not (isem(@line))
+{
+    font-size: @size;
+    line-height: @size * @line;
+}
+
+.font-truncate() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.font-face(@name, @path, @weight: normal, @style: normal) {
+    @font-face {
+        font-family: @name;
+        src: url('@{path}.eot');
+        src: url('@{path}.eot?#iefix') format('embedded-opentype'), url('@{path}.woff') format('woff'), url('@{path}.ttf') format('truetype');
+        font-weight: @weight;
+        font-style: @style;
+    }
+}

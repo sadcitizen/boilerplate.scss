@@ -1,0 +1,40 @@
+/**
+ * Helpers
+ */
+
+// -- Prefix
+.prefix(@name, @value) {
+    -webkit-@{name}: @value;
+    -moz-@{name}: @value;
+    @{name}: @value;
+}
+
+.prefix-o(@name, @value) {
+    .prefix(@name, @value);
+    -o-@{name}: @value;
+}
+
+.prefix-ms(@name, @value) {
+    .prefix(@name, @value);
+    -ms-@{name}: @value;
+}
+
+.prefix-all(@name, @value) {
+    .prefix(@name, @value);
+    -o-@{name}: @value;
+    -ms-@{name}: @value;
+}
+
+// -- Misc
+.placeholder(@color) when (iscolor(@color)) {
+    &:-moz-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-webkit-input-placeholder {
+        color: @color;
+    }
+}
+
+.user-select(@select) {
+    .prefix-ms(user-select, @select);
+}

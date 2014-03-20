@@ -1,0 +1,22 @@
+/**
+ * Transformations
+ */
+.transform (@transform) {
+    .prefix-all(transform, @transform);
+}
+
+.rotate (@rotation) {
+    .transform(rotate(@rotation));
+}
+
+.scale (@scale) {
+    .transform(scale(@scale));
+}
+
+.skew (@deg1, @deg2) {
+    .transform(skew(@deg1, @deg2));
+}
+
+.translate (@x, @y:0) {
+    .transform(translate(@x, @y));
+}
