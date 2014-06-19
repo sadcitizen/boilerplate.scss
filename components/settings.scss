@@ -1,0 +1,20 @@
+// --- fonts
+$font-sans: 'PT Sans';
+$font-serif: 'PT Serif';
+$font-mono: 'PT Mono';
+
+// --- images
+$base-image-url: '../images';
+
+// --- layout
+$layout-width: 75rem;
+$header-height: 6rem;
+$footer-height: 6rem;
+
+$logo-size: 5rem;
+
+// --- media
+$layout-width-huge: $layout-width * 1.2;
+$layout-width-large: $layout-width;
+$layout-width-medium: $layout-width * 0.75;
+$layout-width-small: $layout-width * 0.5;

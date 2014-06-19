@@ -1,0 +1,70 @@
+table {
+    width: 100%;
+}
+
+thead {
+
+}
+
+tbody {
+
+}
+
+tfoot {
+
+}
+
+tr {
+
+}
+
+td,
+th {
+
+}
+
+.t-table {
+
+    &.t-table-striped {
+
+    }
+
+    &.t-table-bordered {
+
+    }
+}
+
+.t-thead {
+
+}
+
+.t-tbody {
+
+}
+
+.t-foot {
+
+}
+
+.t-tr {
+
+}
+
+.t-td {
+
+    // .t-td-left, .t-td-center, .t-td-right
+    @each $direction in (left, center, right) {
+        &.t-td-#{$direction} {
+            text-align: $direction;
+        }
+    }
+
+    // .t-td-5, .t-td-10, ... .t-td-95 - %
+    $w: 95;
+    @while $w > 0 {
+        &.t-td-#{$w} {
+            width: $w * 1%;
+        }
+        $w: $w - 5;
+    }
+}

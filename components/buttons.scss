@@ -1,0 +1,54 @@
+.button {
+    display: block;
+    border: none;
+    padding: 0;
+    line-height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    &.button-huge {
+
+    }
+
+    &.button-large {
+
+    }
+
+    &.button-small {
+
+    }
+
+    &.button-success {
+
+        &:hover {
+
+        }
+
+        &:active {
+
+        }
+    }
+
+    &.button-submit {
+
+        &:hover {
+
+        }
+
+        &:active {
+
+        }
+    }
+
+    &.button-cancel {
+
+        &:hover {
+
+        }
+
+        &:active {
+
+        }
+    }
+}

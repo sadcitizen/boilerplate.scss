@@ -1,23 +1,25 @@
 ﻿Словарь сокращений
 =============
 
-Данный словарь не является обязательным к использованию. Полное слово всегда читебельнее, чем его сокращение. Но если нужно что-то сократить, то лучше это делать в рамках словаря.
+Данный словарь не является обязательным к использованию. Полное слово всегда читебельнее, чем его сокращение. 
+Но если нужно что-то сократить, то лучше это делать в рамках словаря.
 
 * `btn` - button
 * `chk` - checkbox
 * `ctr` - container
 * `ftr` - footer
 * `hdr` - header
-* `icn` - icon
+* `ic` - icon
 * `img` - image
-* `itm` - item
+* `i` - item
 * `lbl` - label
 * `lgc` - logic
 * `lnk` - link
 * `lrg` - large
-* `lst` - list
+* `ls` - list
 * `mdm` - medium
 * `msg` - message
+* `nav` - navigation
 * `plg` - plugin
 * `plh` - placeholder
 * `psw` - password
@@ -27,4 +29,22 @@
 * `txr` - textarea
 * `txt` - text
 
-Сокращение должно состоять из 3-х букв.
+Префиксы
+
+* `b-` - block
+* `f-` - form
+* `g-` - global
+* `gr-` - grid
+* `is-` - state (состояние, например, `.is-hidden`)
+* `js-` - javascript
+* `l-` - layout
+* `n-` - navigation, menu
+* `p-` - page
+* `s-` - section
+
+Суффиксы
+
+* `-i` - item
+* `-ls` - list
+
+

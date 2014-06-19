@@ -1,0 +1,32 @@
+/**
+ * Box model
+ */
+@mixin blocks-list($type: block) {
+    list-style: none;
+
+    @if $type == inline {
+        @include blocks-list();
+        @include clearfix();
+
+        > li {
+            float: left;
+        }
+    } @else {
+        @include cancel();
+        display: block;
+
+        > li {
+            display: block;
+        }
+    }
+}
+
+@mixin size($width, $height: $width) {
+    @if $width == auto or (type-of($width) == number and not unitless($width)) {
+        width: $width;
+    }
+
+    @if $height == auto or (type-of($height) == number and not unitless($height)) {
+        height: $height;
+    }
+}

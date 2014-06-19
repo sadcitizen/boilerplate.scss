@@ -1,0 +1,33 @@
+$step: 30px;
+// шаг сетки спрайта
+
+%icon-16 {
+    @include size(16px);
+}
+
+%icon-24 {
+    @include size(24px);
+}
+
+%icon-32 {
+    @include size(32px);
+}
+
+%icon-64 {
+    @include size(64px);
+}
+
+.icon {
+    display: block;
+    @include background('path/to/sprite');
+}
+
+// --- icon list
+
+.icon-sample {
+    @include sprite($step, 0, 0);
+    @extend %icon-32;
+}
+
+
+
