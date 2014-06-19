@@ -20,6 +20,7 @@ body {
 
 .l-header {
     height: $footer-height;
+    @include gradient(vertical, #fff, #eee);
 }
 
 .l-body {

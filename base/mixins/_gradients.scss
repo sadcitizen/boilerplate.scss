@@ -1,0 +1,13 @@
+@mixin gradient ($direction, $start, $end) {
+
+    background: $start;
+
+    @if $direction == horizontal {
+        background: linear-gradient(to right, $start 0%, $end 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$start}', endColorstr='#{$end}',GradientType=1);
+    }
+    @if $direction == vertical {
+        background: linear-gradient(to bottom, $start 0%, $end 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$start}', endColorstr='#{$end}',GradientType=0);
+    }
+}
