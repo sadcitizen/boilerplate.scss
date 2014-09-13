@@ -1,5 +1,6 @@
+/* jshint node:true */
 module.exports = function(grunt) {
-
+    'use strict';
     var banner = '/*! <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd hh:MM:ss TT Z") %> */\n';
 
     grunt.initConfig({
