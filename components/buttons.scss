@@ -7,19 +7,24 @@
     text-decoration: none;
     cursor: pointer;
 
-    &.button-huge {
+    // --- modifiers
+
+    // --- modifiers:sizes
+    &--huge {
 
     }
 
-    &.button-large {
+    &--large {
 
     }
 
-    &.button-small {
+    &--small {
 
     }
 
-    &.button-success {
+    // --- modifiers:types
+
+    &--success {
 
         &:hover {
 
@@ -30,7 +35,7 @@
         }
     }
 
-    &.button-submit {
+    &--submit {
 
         &:hover {
 
@@ -41,7 +46,7 @@
         }
     }
 
-    &.button-cancel {
+    &--cancel {
 
         &:hover {
 
