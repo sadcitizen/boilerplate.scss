@@ -20,14 +20,13 @@ $step: 30px;
 .icon {
     display: block;
     @include background('path/to/sprite');
+
+    // --- modifiers
+
+    &--sample {
+        @include sprite($step, 0, 0);
+        @extend %icon-32;
+    }
 }
-
-// --- icon list
-
-.icon-sample {
-    @include sprite($step, 0, 0);
-    @extend %icon-32;
-}
-
 
 
