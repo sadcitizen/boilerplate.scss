@@ -2,23 +2,23 @@
     @include clearfix();
 }
 
-.gr-col {
+.gr-cell {
     float: left;
     width: 100%;
 
-    // .gr-col-5, .gr-col-10, ... .gr-col-95 - %
+    // .gr-cell--5, .gr-cell--10, ... .gr-cell-95 - %
     $w: 95;
     @while $w > 0 {
-        &.gr-col-#{$w} {
+        &.gr-cell--#{$w} {
             width: $w * 1%;
         }
         $w: $w - 5;
     }
 
-    // .gr-col-offset-5, .gr-col-offset-10, ... .gr-col-offset-95 - %
+    // .gr-cell--offset-5, .gr-cell--offset-10, ... .gr-cell--offset-95 - %
     $w: 95;
     @while $w > 0 {
-        &.gr-col-offset-#{$w} {
+        &.gr-cell--offset-#{$w} {
             margin-left: $w * 1%;
         }
         $w: $w - 5;
