@@ -2,58 +2,59 @@
  * Каркас для форм
  */
 
-.f-form {
+.form {
 
-}
+    // --- elements
 
-.f-fieldset {
+    &__checkbox {
 
-}
+    }
 
-.f-text {
+    &__control {
 
-}
 
-.f-checkbox {
+        &--inline {
 
-}
+        }
+    }
 
-.f-textarea {
+    &__error {
 
-}
+    }
 
-.f-select {
+    &__fieldset {
 
-}
+    }
 
-.f-group {
+    &__group {
 
-}
+    }
 
-.f-title {
+    &__notice {
 
-}
+    }
 
-.f-label {
+    &__label {
 
-}
+    }
 
-.f-notice {
+    &__radio {
 
-}
+    }
 
-.f-error {
+    &__select {
 
-}
+    }
 
-.f-radio {
+    &__text {
 
-}
+    }
 
-.f-control {
+    &__textarea {
 
-}
+    }
 
-.f-control-inline {
+    &__title {
 
+    }
 }
