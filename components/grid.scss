@@ -1,15 +1,18 @@
-.gr-row {
-    @include clearfix();
-}
+.grid {
 
-.gr-cell {
-    float: left;
-    width: 100%;
+    &__row {
+        @include clearfix();
+    }
+
+    &__cell {
+        float: left;
+        width: 100%;
+    }
 
     // .gr-cell--5, .gr-cell--10, ... .gr-cell-95 - %
     $w: 95;
     @while $w > 0 {
-        &.gr-cell--#{$w} {
+        &__cell--#{$w} {
             width: $w * 1%;
         }
         $w: $w - 5;
@@ -18,7 +21,7 @@
     // .gr-cell--offset-5, .gr-cell--offset-10, ... .gr-cell--offset-95 - %
     $w: 95;
     @while $w > 0 {
-        &.gr-cell--offset-#{$w} {
+        &__cell--offset-#{$w} {
             margin-left: $w * 1%;
         }
         $w: $w - 5;
