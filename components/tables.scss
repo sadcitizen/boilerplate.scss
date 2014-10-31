@@ -23,27 +23,27 @@ th {
 
 }
 
-.table {
+.table { // Базовый класс таблицы
 
-    // --- elements
+    // Элементы таблицы
 
-    &__header {
-
-    }
-
-    &__body {
+    &__header { // .table__header
 
     }
 
-    &__footer {
+    &__body { // .table__body
 
     }
 
-    &__row {
+    &__footer { // .table__footer
 
     }
 
-    &__cell {
+    &__row { // .table__row
+
+    }
+
+    &__cell { // .table__cell
 
     }
 
@@ -63,7 +63,7 @@ th {
         $w: $w - 5;
     }
 
-    // --- modifiers
+    // Модификаторы
 
     &--striped {
 

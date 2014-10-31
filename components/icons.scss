@@ -17,15 +17,36 @@ $step: 30px;
     @include size(64px);
 }
 
-.icon {
+.icon { // Базовый класс иконки
     display: block;
     @include background('path/to/sprite');
 
-    // --- modifiers
+    // Иконки
 
-    &--sample {
+    &-edit {
         @include sprite($step, 0, 0);
         @extend %icon-32;
+
+        &:hover {
+
+        }
+
+        &:active {
+
+        }
+    }
+
+    &-close {
+        @include sprite($step, 0, 0);
+        @extend %icon-32;
+
+        &:hover {
+
+        }
+
+        &:active {
+            
+        }
     }
 }
 

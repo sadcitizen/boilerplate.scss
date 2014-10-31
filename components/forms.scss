@@ -1,60 +1,56 @@
-/*
- * Каркас для форм
- */
+.form { // Базовый класс формы
 
-.form {
+    // Элементы формы
 
-    // --- elements
-
-    &__checkbox {
+    &__checkbox { // .form__checkbox
 
     }
 
-    &__control {
+    &__control { // .form__control
 
 
-        &--inline {
+        &--inline { // .form__control--inline
 
         }
     }
 
-    &__error {
+    &__error { // .form__error
 
     }
 
-    &__fieldset {
+    &__field { // .form__field
 
     }
 
-    &__group {
+    &__fieldset { // .form__fieldset
 
     }
 
-    &__notice {
+    &__group { // .form__group
 
     }
 
-    &__label {
+    &__notice { // .form__notice
 
     }
 
-    &__radio {
+    &__label { // .form__label
 
     }
 
-    &__select {
+    &__radio { // .form__radio
 
     }
 
-    &__text {
+    &__select { // .form__select
 
     }
 
-    &__textarea {
+    &__text { // .form__text
 
     }
 
-    &__title {
+    &__textarea { // .form__textarea
 
     }
 }

@@ -1,16 +1,16 @@
-.p-page {
+.page { // Базовый класс для страницы
 
-    // --- elements
+    // --- Элементы
 
-    &__header {
-
-    }
-
-    &__content {
+    &__header { // .page__header
 
     }
 
-    &__footer {
+    &__content { // .page__content
+
+    }
+
+    &__footer {  // .page__footer
 
     }
 }

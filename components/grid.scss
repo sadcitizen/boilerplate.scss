@@ -9,7 +9,7 @@
         width: 100%;
     }
 
-    // .gr-cell--5, .gr-cell--10, ... .gr-cell-95 - %
+    // .grid-cell--5, .grid-cell--10, ... .grid-cell-95 - %
     $w: 95;
     @while $w > 0 {
         &__cell--#{$w} {
@@ -18,7 +18,7 @@
         $w: $w - 5;
     }
 
-    // .gr-cell--offset-5, .gr-cell--offset-10, ... .gr-cell--offset-95 - %
+    // .grid-cell--offset-5, .grid-cell--offset-10, ... .grid-cell--offset-95 - %
     $w: 95;
     @while $w > 0 {
         &__cell--offset-#{$w} {
