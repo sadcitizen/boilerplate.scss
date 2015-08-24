@@ -55,12 +55,6 @@ $font-family-mono: Consolas, "Courier New", monospace;
     }
 }
 
-@mixin font-truncate() {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
 @mixin font-face($name, $path, $weight: normal, $style: normal) {
     @font-face {
         font-family: $name;
@@ -69,4 +63,10 @@ $font-family-mono: Consolas, "Courier New", monospace;
         font-weight: $weight;
         font-style: $style;
     }
+}
+
+@mixin text-truncate() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
