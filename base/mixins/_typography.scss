@@ -31,15 +31,15 @@ $font-family-mono: Consolas, "Courier New", monospace;
 
 @mixin font-family($type, $font) {
     @if $type == sans {
-        font-family: #{$font}, #{$font-family-sans-serif};
+        font-family: $font, $font-family-sans-serif;
     }
 
     @if $type == serif {
-        font-family: #{$font}, #{$font-family-serif};
+        font-family: $font, $font-family-serif;
     }
 
     @if $type == mono {
-        font-family: #{$font}, #{$font-family-mono};
+        font-family: $font, $font-family-mono;
     }
 }
 
