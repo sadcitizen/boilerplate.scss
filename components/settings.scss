@@ -23,3 +23,7 @@ $mq-huge: 'screen and (min-width: #{$layout-width-huge})';
 $mq-large: '(min-width: #{$layout-width-large})';
 $mq-medium: '(min-width: #{$layout-width-medium})';
 $mq-small: '(min-width: #{$layout-width-small})';
+
+// --- spaces
+$base-spaces-step: 5px;
+$base-spaces-limit: 50px;

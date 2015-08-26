@@ -1,0 +1,4 @@
+@each $side in (top, right, bottom, left) {
+    @include margin-create($side, $base-spaces-step, $base-spaces-limit);
+    @include padding-create($side, $base-spaces-step, $base-spaces-limit);
+}
