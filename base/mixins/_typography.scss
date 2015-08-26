@@ -64,9 +64,3 @@ $font-family-mono: Consolas, "Courier New", monospace;
         font-style: $style;
     }
 }
-
-@mixin text-truncate() {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}

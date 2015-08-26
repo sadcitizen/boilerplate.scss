@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         sass: {
             styles: {
                 files: {
-                    'styles.css': 'styles.scss'
+                    'src/styles.css': 'src/styles.scss'
                 }
             }
         },
@@ -18,18 +18,18 @@ module.exports = function(grunt) {
         autoprefixer: {
             options: {
                 browsers: ['last 2 version', 'ie 8', 'ie 9'],
-                diff: true
+                diff: false
             },
 
             styles: {
-                src: 'styles.css',
-                dest: 'styles.prefixed.css'
+                src: 'src/styles.css',
+                dest: 'src/styles.prefixed.css'
             }
         },
 
         watch: {
             styles: {
-                files: ['**/*.scss', '*.scss'],
+                files: ['src/**/*.scss', 'src/*.scss'],
                 tasks: ['styles']
             }
         },
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         cssmin: {
             production: {
                 files: {
-                    'styles.min.css': 'styles.prefixed.css'
+                    'src/styles.min.css': 'src/styles.prefixed.css'
                 },
                 options: {
                     banner: banner
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
 
         clean: {
             styles: {
-                src: ['styles.css', 'styles.prefixed.css']
+                src: ['src/styles.css', 'src/styles.prefixed.css']
             }
         }
     });
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
     grunt.registerTask('styles', [
         'sass',
         'autoprefixer',
-        'cssmin',
-        'clean'
+        'cssmin'//,
+        //'clean'
     ]);
 };

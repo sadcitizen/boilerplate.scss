@@ -1,3 +1,6 @@
+/**
+ * Spaces
+ */
 @mixin space-create($type, $side, $size) {
     $char: map-get(('top': 't', 'right': 'r', 'bottom': 'b', 'left': 'l'), $side);
 
@@ -16,6 +19,7 @@
 
 @mixin margin-create($type, $step, $limit) {
     $i: $limit;
+
     @while $i >= 0 {
         @include space-create(margin, $type, $i);
         $i: $i - $step;
@@ -24,6 +28,7 @@
 
 @mixin padding-create($type, $step, $limit) {
     $i: $limit;
+
     @while $i >= 0 {
         @include space-create(padding, $type, $i);
         $i: $i - $step;

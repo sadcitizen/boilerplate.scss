@@ -1,4 +1,7 @@
-@mixin opacity ($opacity: 0.5) {
+/**
+ * Filters
+ */
+@mixin opacity($opacity: 0.5) {
     zoom: 1;
     opacity: $opacity;
     $op: $opacity * 100;

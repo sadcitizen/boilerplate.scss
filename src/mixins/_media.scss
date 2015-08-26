@@ -1,3 +1,6 @@
+/**
+ * Media mixins
+ */
 @mixin breakpoint($media) {
     @media #{$media} {
         @content;
