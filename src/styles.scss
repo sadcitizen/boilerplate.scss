@@ -26,6 +26,7 @@
 // Utilities
 @import 'utilities/clearfix';
 @import 'utilities/floats';
+@import 'utilities/lists';
 @import 'utilities/spaces';
 @import 'utilities/text';
 
@@ -33,5 +34,11 @@
 @import 'layout/footer';
 @import 'layout/header';
 
-
 // Components
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/grid';
+@import 'components/tables';
+
+// Partials
+@import 'partials/sample';
