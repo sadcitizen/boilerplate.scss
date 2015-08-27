@@ -1,14 +1,8 @@
 /**
- *
+ * Floats
  */
-.float-right {
-
-}
-
-.float-left {
-
-}
-
-.float-none {
-
+@each $float in (left, right, none) {
+    .float-#{$float} {
+        float: $float;
+    }
 }
