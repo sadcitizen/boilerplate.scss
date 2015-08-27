@@ -1,0 +1,15 @@
+/**
+ * Lists
+ */
+.list-reset {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-inline {
+    @extend .list-reset;
+
+    > li {
+        display: inline-block;
+    }
+}
