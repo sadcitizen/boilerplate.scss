@@ -1,0 +1,27 @@
+/**
+ * Colors
+ */
+
+// default, primary, secondary, success, warning, danger, grayscale, neutral
+$palette: (
+    'default': (
+        'base': #8e3329,
+        'light': #d9534f,
+        'dark': #c9302c
+    ),
+    'primary': (
+        'base': #8e3329,
+        'light': #d9534f,
+        'dark': #c9302c
+    ),
+    'danger': (
+        'base': #d98328,
+        'light': #dd8f3d,
+        'dark': #c57623
+    ),
+    'success': (
+        'base': #5a1321,
+        'light': #7b1a2d,
+        'dark': #51111e
+    )
+);
