@@ -5,12 +5,8 @@
 // Base
 @import 'base/normalize';
 @import 'base/reset';
-
-// Colors
-@import 'colors';
-
-// Settings
-@import 'settings';
+@import 'base/colors';
+@import 'base/settings';
 
 // Mixins
 @import 'mixins/border-radius';
