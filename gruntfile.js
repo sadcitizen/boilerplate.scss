@@ -63,7 +63,7 @@ module.exports = function(grunt) {
     grunt.registerTask('styles', [
         'sass',
         'autoprefixer',
-        'cssmin'//,
-        //'clean'
+        'cssmin',
+        'clean'
     ]);
 };

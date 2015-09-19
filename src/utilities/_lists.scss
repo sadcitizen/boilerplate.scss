@@ -13,3 +13,10 @@
         display: inline-block;
     }
 }
+
+// Style
+@each $style in (disc, circle, square) {
+    .list-#{$style} {
+        list-style-type: $style;
+    }
+}
