@@ -1,0 +1,23 @@
+/**
+ * Grid
+ */
+
+/**
+ * Column
+ */
+@mixin col {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+/**
+ * Row
+ */
+@mixin row($space: 0) {
+    $margin: $space / -2;
+
+    @include clearfix();
+    margin-left: $margin;
+    margin-right: $margin;
+}

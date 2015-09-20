@@ -5,8 +5,6 @@
 // Base
 @import 'base/normalize';
 @import 'base/reset';
-@import 'base/colors';
-@import 'base/settings';
 
 // Mixins
 @import 'mixins/border-radius';
@@ -21,6 +19,12 @@
 @import 'mixins/size';
 @import 'mixins/spaces';
 @import 'mixins/text';
+
+// Settings
+@import 'settings/buttons';
+@import 'settings/colors';
+@import 'settings/grid';
+@import 'settings/spaces';
 
 // Utilities
 @import 'utilities/clearfix';
