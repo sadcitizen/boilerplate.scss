@@ -1,0 +1,40 @@
+/**
+ * Shapes
+ */
+
+/**
+ * Triangles
+ *
+ * Directions: up, right, down, left
+ */
+@mixin triangle($direction, $width, $height, $color, $background-color: transparent) {
+    @include size(0);
+
+    @if $direction == up {
+        border-top: 0;
+        border-right: ($width / 2) solid $background-color;
+        border-bottom: $height solid $color;
+        border-left: ($width / 2) solid $background-color;
+    }
+
+    @if $direction == right {
+        border-top: ($height / 2) solid $background-color;
+        border-right: 0;
+        border-bottom: ($height / 2) solid $background-color;
+        border-left: $width solid $color;
+    }
+
+    @if $direction == down {
+        border-top: $height solid $color;
+        border-right: ($width / 2) solid $background-color;
+        border-bottom: 0;
+        border-left: ($width / 2) solid $background-color;
+    }
+
+    @if $direction == left {
+        border-top: ($height / 2) solid $background-color;
+        border-right: $width solid $color;
+        border-bottom: ($height / 2) solid $background-color;
+        border-left: 0;
+    }
+}
