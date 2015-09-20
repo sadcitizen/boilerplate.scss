@@ -10,31 +10,37 @@
 @mixin triangle($direction, $width, $height, $color, $background-color: transparent) {
     @include size(0);
 
-    @if $direction == up {
-        border-top: 0;
+    @mixin border-y {
         border-right: ($width / 2) solid $background-color;
-        border-bottom: $height solid $color;
         border-left: ($width / 2) solid $background-color;
+    }
+     
+    @mixin border-x {
+        border-top: ($height / 2) solid $background-color;
+        border-bottom: ($height / 2) solid $background-color;
+    }
+
+    @if $direction == up {
+        @include border-y();
+        border-top: 0;
+        border-bottom: $height solid $color;
     }
 
     @if $direction == right {
-        border-top: ($height / 2) solid $background-color;
+        @include border-x();
         border-right: 0;
-        border-bottom: ($height / 2) solid $background-color;
         border-left: $width solid $color;
     }
 
     @if $direction == down {
+        @include border-y;
         border-top: $height solid $color;
-        border-right: ($width / 2) solid $background-color;
         border-bottom: 0;
-        border-left: ($width / 2) solid $background-color;
     }
 
     @if $direction == left {
-        border-top: ($height / 2) solid $background-color;
+        @include border-x;
         border-right: $width solid $color;
-        border-bottom: ($height / 2) solid $background-color;
         border-left: 0;
     }
-}
+ }
