@@ -1,11 +1,46 @@
 /**
  * Buttons
+ *
+ * States:
+ * - normal
+ * - hover
+ * - active
+ * - disabled
  */
-%btn {
-
-}
-
 .btn {
 
-}
+    // States
+    &:hover {
 
+    }
+
+    &:active,
+    &:focus {
+
+    }
+
+    &[disabled] {
+
+    }
+
+    // Sizes
+    &--xl { // .btn--xl
+        @include button-size($btn-size-xl);
+    }
+
+    &--lg { // .btn--lg
+        @include button-size($btn-size-xl);
+    }
+
+    &--md { // .btn--md
+        @include button-size($btn-size-md);
+    }
+
+    &--sm { // .btn--sm
+        @include button-size($btn-size-sm);
+    }
+
+    &--xs { // .btn--xs
+        @include button-size($btn-size-xs);
+    }
+}
