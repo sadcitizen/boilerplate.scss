@@ -6,7 +6,7 @@
  * Container
  */
 .container {
-    @include clearfix();
+    @extend %clearfix;
     
     &--fluid {
 
@@ -16,6 +16,9 @@
 /**
  * Row
  */
+.row {
+    @include row();
+}
 
 /**
  * Column

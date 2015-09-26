@@ -17,7 +17,7 @@
 @mixin row($space: 0) {
     $margin: $space / -2;
 
-    @include clearfix();
+    @extend %clearfix;
     margin-left: $margin;
     margin-right: $margin;
 }

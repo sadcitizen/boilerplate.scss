@@ -7,7 +7,7 @@
  * - active
  * - disabled
  */
-.btn {
+.#{$namespace}btn {
 
     // States
     &:hover {

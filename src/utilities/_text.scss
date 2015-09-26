@@ -3,49 +3,49 @@
  */
 
 // Styles
-.text-regular {
+.#{$namespace}text-regular {
     font-weight: normal;
 }
 
-.text-bold {
+.#{$namespace}text-bold {
     font-weight: bold;
 }
 
-.text-italic {
+.#{$namespace}text-italic {
     font-style: italic;
 }
 
 // Alignment
 @each $direction in (left, center, right, justify) {
-    .text-#{$direction} {
+    .#{$namespace}text-#{$direction} {
         text-align: $direction;
     }
 }
 
 // Decorations
-.text-strike {
+.#{$namespace}text-strike {
     text-decoration: line-through;
 }
 
-.text-overline {
+.#{$namespace}text-overline {
     text-decoration: overline;
 }
 
-.text-underline {
+.#{$namespace}text-underline {
     text-decoration: underline;
 }
 
 // Transformations
 @each $transform in (lowercase, uppercase, capitalize) {
-    .text-#{$transform} {
+    .#{$namespace}text-#{$transform} {
         text-transform: $transform;
     }
 }
 
-.text-nowrap {
+.#{$namespace}text-nowrap {
     white-space: nowrap;
 }
 
-.text-truncate {
+.#{$namespace}text-truncate {
     @include text-truncate();
 }
