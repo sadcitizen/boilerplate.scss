@@ -1,0 +1,55 @@
+/********************************
+ * Typography
+ ********************************/
+body {
+    @include text-size($body-text-size);
+
+    font-family: $body-font-family;
+}
+
+/**
+ * Headings
+ */
+$headings: ('h1': $h1, 'h2': $h2, 'h3': $h3, 'h4': $h4, 'h5': $h5, 'h6': $h6);
+
+@each $key, $value in $headings {
+    #{$key}, .#{$namespace}#{$key} {
+        @include text-size($value);
+    }
+}
+
+/**
+ * Links
+ */
+
+/**
+ * Paragraph
+ */
+p, .#{$namespace}paragraph {
+    margin-top: $paragraph-margin-top;
+    margin-bottom: $paragraph-margin-bottom;
+}
+
+/**
+ * Lists
+ */
+
+/**
+ * Misc
+ */
+abbr[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+i, em {
+    @extend .#{$namespace}text-italic;
+}
+
+b, strong {
+    @extend .#{$namespace}text-bold;
+}
+
+small, .#{$namespace}small {
+    font-size: $small-font-size;
+}

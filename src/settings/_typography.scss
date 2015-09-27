@@ -1,0 +1,58 @@
+/********************************
+ * Typography
+ ********************************/
+
+/**
+ * Font Families
+ */
+$font-family-sans-serif: Arial, Tahoma, sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+$font-family-mono: Consolas, "Courier New", monospace;
+
+/**
+ * Body
+ */
+$body-font-family: $font-family-sans-serif;
+$body-text-size: ('font-size': 1rem, 'line-height': 1.5);
+
+/**
+ * Headings
+ */
+$headings-font-weight: bold !default;
+$headings-line-height: 1.5 !default;
+
+$h1: (
+    'font-size': 2rem,
+    'line-height': $headings-line-height
+);
+$h2: (
+    'font-size': 1.5rem,
+    'line-height': $headings-line-height
+);
+$h3: (
+    'font-size': 1.25rem,
+    'line-height': $headings-line-height
+);
+$h4: (
+    'font-size': 1rem,
+    'line-height': $headings-line-height
+);
+$h5: (
+    'font-size': .875rem,
+    'line-height': $headings-line-height
+);
+$h6: (
+    'font-size': .75rem,
+    'line-height': $headings-line-height
+);
+
+/**
+ * Paragraph
+ */
+$paragraph-margin-top: 0;
+$paragraph-margin-bottom: 1rem;
+
+/**
+ * Misc
+ */
+$small-font-size: 80%;

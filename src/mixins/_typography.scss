@@ -1,9 +1,6 @@
-/**
- * Font mixins
- */
-$font-family-sans-serif: Arial, Tahoma, sans-serif;
-$font-family-serif: Georgia, "Times New Roman", Times, serif;
-$font-family-mono: Consolas, "Courier New", monospace;
+/********************************
+ * Typography
+ ********************************/
 
 @mixin font-face($name, $path, $weight: normal, $style: normal) {
     @font-face {
@@ -27,4 +24,15 @@ $font-family-mono: Consolas, "Courier New", monospace;
     @if $type == mono {
         font-family: $font, $font-family-mono;
     }
+}
+
+@mixin text-size($size) {
+    font-size: map-get($size, 'font-size');
+    line-height: map-get($size, 'line-height');
+}
+
+@mixin text-truncate() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

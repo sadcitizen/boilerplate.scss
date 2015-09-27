@@ -1,8 +1,10 @@
-/**
- * Text utilities
- */
+/********************************
+ * Typography utilities
+ ********************************/
 
-// Styles
+/**
+ * Styles
+ */
 .#{$namespace}text-regular {
     font-weight: normal;
 }
@@ -15,14 +17,18 @@
     font-style: italic;
 }
 
-// Alignment
+/**
+ * Alignment
+ */
 @each $direction in (left, center, right, justify) {
     .#{$namespace}text-#{$direction} {
         text-align: $direction;
     }
 }
 
-// Decorations
+/**
+ * Decorations
+ */
 .#{$namespace}text-strike {
     text-decoration: line-through;
 }
@@ -35,13 +41,18 @@
     text-decoration: underline;
 }
 
-// Transformations
+/**
+ * Transformations
+ */
 @each $transform in (lowercase, uppercase, capitalize) {
     .#{$namespace}text-#{$transform} {
         text-transform: $transform;
     }
 }
 
+/**
+ * Misc
+ */
 .#{$namespace}text-nowrap {
     white-space: nowrap;
 }
