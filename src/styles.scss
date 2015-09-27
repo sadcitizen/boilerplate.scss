@@ -1,16 +1,29 @@
-/**
- *
- */
+/********************************
+ * QS.scss
+ ********************************/
 
-// Base
+/**
+ * Base
+ */
 @import 'base/normalize';
 @import 'base/reset';
 
-// Mixins
+/**
+ * Settings
+ */
+@import 'settings/buttons';
+@import 'settings/colors';
+@import 'settings/grid';
+@import 'settings/namespace';
+@import 'settings/spaces';
+@import 'settings/typography';
+
+/**
+ * Mixins
+ */
 @import 'mixins/border-radius';
 @import 'mixins/buttons';
 @import 'mixins/filters';
-@import 'mixins/font';
 @import 'mixins/gradients';
 @import 'mixins/grid';
 @import 'mixins/media';
@@ -18,31 +31,34 @@
 @import 'mixins/shapes';
 @import 'mixins/size';
 @import 'mixins/spaces';
-@import 'mixins/text';
+@import 'mixins/typography';
 
-// Settings
-@import 'settings/buttons';
-@import 'settings/colors';
-@import 'settings/grid';
-@import 'settings/namespace';
-@import 'settings/spaces';
-
-// Utilities
+/**
+ * Utilities
+ */
 @import 'utilities/clearfix';
 @import 'utilities/floats';
 @import 'utilities/lists';
 @import 'utilities/spaces';
-@import 'utilities/text';
+@import 'utilities/typography';
 
-// Layout
+/**
+ * Layout
+ */
 @import 'layout/footer';
 @import 'layout/header';
 
-// Components
+/**
+ * Components
+ */
 @import 'components/buttons';
 @import 'components/forms';
 @import 'components/grid';
+@import 'components/misc';
 @import 'components/tables';
+@import 'components/typography';
 
-// Partials
+/**
+ * Partials
+ */
 @import 'partials/sample';
