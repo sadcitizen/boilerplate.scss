@@ -41,6 +41,20 @@ p, .#{$namespace}paragraph {
 /**
  * Lists
  */
+ul, ol {
+    margin-top: $list-margin-top;
+    margin-bottom: $list-margin-bottom;
+    padding-left: 0;
+    list-style-position: inside;
+
+    ul, ol {
+        margin-left: $list-indent-size;
+    }
+}
+
+/**
+ * Definition lists
+ */
 
 /**
  * Misc
@@ -62,12 +76,11 @@ small, .#{$namespace}small {
     font-size: $small-font-size;
 }
 
-sub,
-sup {
+sub, sup {
+    @include text-size($sub-sup-text-size);
+
     position: relative;
     vertical-align: baseline;
-    font-size: $small-font-size;
-    line-height: 0;
 }
 
 sup {

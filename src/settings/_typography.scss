@@ -63,12 +63,29 @@ $h6: (
 );
 
 /**
+ * Links
+ */
+
+
+/**
  * Paragraph
  */
 $paragraph-margin-top: 0;
 $paragraph-margin-bottom: 1rem;
 
 /**
+ * Lists
+ */
+$list-margin-top: 1rem;
+$list-margin-bottom: 1rem;
+$list-indent-size: 1rem;
+
+/**
+ * Definition lists
+ */
+
+/**
  * Misc
  */
 $small-font-size: 80%;
+$sub-sup-text-size: ('font-size': $small-font-size, 'line-height': 0);
