@@ -1,3 +1,6 @@
+/********************************
+ * Gradients
+ ********************************/
 @mixin gradient($direction, $start, $end) {
     background: $start;
 

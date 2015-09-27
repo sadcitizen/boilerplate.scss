@@ -1,6 +1,6 @@
-/**
+/********************************
  * Floats
- */
+ ********************************/
 @each $float in (left, right, none) {
     .#{$namespace}float-#{$float} {
         float: $float;

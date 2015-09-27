@@ -1,6 +1,6 @@
-/**
+/********************************
  * Spaces
- */
+ ********************************/
 @mixin space-create($type, $side, $size) {
     $char: map-get(('top': 't', 'right': 'r', 'bottom': 'b', 'left': 'l'), $side);
 

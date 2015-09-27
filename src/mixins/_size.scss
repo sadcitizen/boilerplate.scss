@@ -1,6 +1,6 @@
-/**
+/********************************
  * Sizing shortcuts
- */
+ ********************************/
 @mixin size($width, $height: $width) {
     @if $width == auto or (type-of($width) == number and not unitless($width)) {
         width: $width;
