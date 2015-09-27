@@ -65,7 +65,10 @@ $h6: (
 /**
  * Links
  */
-
+$link-color: map-get(map-get($palette, 'primary'), 'base');
+$link-border-color: $link-color;
+$link-hover-color: map-get(map-get($palette, 'primary'), 'light');
+$link-hover-border-color: transparent;
 
 /**
  * Paragraph
