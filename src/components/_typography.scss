@@ -15,6 +15,14 @@ $headings: ('h1': $h1, 'h2': $h2, 'h3': $h3, 'h4': $h4, 'h5': $h5, 'h6': $h6);
 @each $key, $value in $headings {
     #{$key}, .#{$namespace}#{$key} {
         @include text-size($value);
+
+        @if map-has-key($value, 'margin-top') {
+            margin-top: map-get($value, 'margin-top');
+        }
+
+        @if map-has-key($value, 'margin-bottom') {
+            margin-bottom: map-get($value, 'margin-bottom');
+        }
     }
 }
 
@@ -52,4 +60,20 @@ b, strong {
 
 small, .#{$namespace}small {
     font-size: $small-font-size;
+}
+
+sub,
+sup {
+    position: relative;
+    vertical-align: baseline;
+    font-size: $small-font-size;
+    line-height: 0;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
 }

@@ -27,8 +27,13 @@
 }
 
 @mixin text-size($size) {
-    font-size: map-get($size, 'font-size');
-    line-height: map-get($size, 'line-height');
+    @if map-has-key($size, 'font-size') {
+        font-size: map-get($size, 'font-size');
+    }
+
+    @if map-has-key($size, 'line-height') {
+        line-height: map-get($size, 'line-height');
+    }
 }
 
 @mixin text-truncate() {

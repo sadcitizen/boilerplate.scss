@@ -17,33 +17,49 @@ $body-text-size: ('font-size': 1rem, 'line-height': 1.5);
 
 /**
  * Headings
+ *
+ * All rules is optional.
  */
 $headings-font-weight: bold !default;
 $headings-line-height: 1.5 !default;
+$headings-margin-top: 0.5rem !default;
+$headings-margin-bottom: 1rem !default;
 
 $h1: (
     'font-size': 2rem,
-    'line-height': $headings-line-height
+    'line-height': $headings-line-height,
+    'margin-top': $headings-margin-top,
+    'margin-bottom': $headings-margin-bottom,
 );
 $h2: (
     'font-size': 1.5rem,
-    'line-height': $headings-line-height
+    'line-height': $headings-line-height,
+    'margin-top': $headings-margin-top,
+    'margin-bottom': $headings-margin-bottom,
 );
 $h3: (
     'font-size': 1.25rem,
-    'line-height': $headings-line-height
+    'line-height': $headings-line-height,
+    'margin-top': $headings-margin-top,
+    'margin-bottom': $headings-margin-bottom,
 );
 $h4: (
     'font-size': 1rem,
-    'line-height': $headings-line-height
+    'line-height': $headings-line-height,
+    'margin-top': $headings-margin-top,
+    'margin-bottom': $headings-margin-bottom,
 );
 $h5: (
     'font-size': .875rem,
-    'line-height': $headings-line-height
+    'line-height': $headings-line-height,
+    'margin-top': $headings-margin-top,
+    'margin-bottom': $headings-margin-bottom,
 );
 $h6: (
     'font-size': .75rem,
-    'line-height': $headings-line-height
+    'line-height': $headings-line-height,
+    'margin-top': $headings-margin-top,
+    'margin-bottom': $headings-margin-bottom,
 );
 
 /**
