@@ -1,0 +1,17 @@
+/********************************
+ * Colors
+ ********************************/
+$colors-default-name: 'primary' !default;
+$colors-default-key: 'base' !default;
+
+@function color($name: $colors-default-name, $key: $colors-default-key) {
+    $color: null;
+
+    $spectrum: map-get($palette, $name);
+
+    @if $spectrum {
+        $color: map-get($spectrum, $key);
+    }
+
+    @return $color;
+}
