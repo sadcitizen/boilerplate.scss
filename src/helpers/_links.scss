@@ -1,0 +1,14 @@
+/********************************
+ * Links
+ ********************************/
+%link {
+    display: inline-block;
+    color: $link-color;
+    border-bottom: 1px solid $link-border-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $link-hover-color;
+        border-color: $link-hover-border-color;
+    }
+}
