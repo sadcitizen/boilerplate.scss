@@ -10,10 +10,20 @@ $font-family-serif: Georgia, "Times New Roman", Times, serif;
 $font-family-mono: Consolas, "Courier New", monospace;
 
 /**
+ * Sizes
+ */
+$text-size-xxl: ('font-size': 32px, 'line-height': 1.5);
+$text-size-xl: ('font-size': 24px, 'line-height': 1.5);
+$text-size-lg: ('font-size': 20px, 'line-height': 1.5);
+$text-size-md: ('font-size': 16px, 'line-height': 1.5);
+$text-size-sm: ('font-size': 14px, 'line-height': 1.5);
+$text-size-xs: ('font-size': 12px, 'line-height': 1.5);
+
+/**
  * Body
  */
 $body-font-family: $font-family-sans-serif;
-$body-text-size: ('font-size': 1rem, 'line-height': 1.5);
+$body-text-size: $text-size-md;
 
 /**
  * Headings
