@@ -29,17 +29,6 @@ $headings: ('h1': $h1, 'h2': $h2, 'h3': $h3, 'h4': $h4, 'h5': $h5, 'h6': $h6);
 /**
  * Links
  */
-%link {
-    display: inline-block;
-    color: $link-color;
-    border-bottom: 1px solid $link-border-color;
-    text-decoration: none;
-
-    &:hover {
-        color: $link-hover-color;
-        border-color: $link-hover-border-color;
-    }
-}
 
 a {
     @extend %link;
@@ -119,11 +108,11 @@ abbr[title] {
 }
 
 i, em {
-    @extend .#{$namespace}text-italic;
+    @extend .#{$namespace}text--italic;
 }
 
 b, strong {
-    @extend .#{$namespace}text-bold;
+    @extend .#{$namespace}text--bold;
 }
 
 small, .#{$namespace}small {
