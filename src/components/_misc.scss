@@ -1,0 +1,12 @@
+/********************************
+ * Misc
+ ********************************/
+hr, .#{$namespace}hr {
+    display: block;
+    height: 0;
+    margin-top: $hr-margin-top;
+    margin-bottom: $hr-margin-bottom;
+    border: 0;
+    border-bottom: $hr-height solid $hr-color;
+}
+
