@@ -11,4 +11,14 @@
         color: $link-hover-color;
         border-color: $link-hover-border-color;
     }
+
+    &:active {
+        color: $link-active-color;
+        border-color: $link-active-border-color;
+    }
+
+    &:visited {
+        color: $link-visited-color;
+        border-color: $link-visited-border-color;
+    }
 }
