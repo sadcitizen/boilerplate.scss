@@ -35,9 +35,3 @@
         line-height: map-get($size, 'line-height');
     }
 }
-
-@mixin text-truncate() {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
