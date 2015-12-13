@@ -3,54 +3,57 @@
  ********************************/
 
 /**
- * Base
+ * Base. Reset styles.
  */
 @import 'base/normalize';
 @import 'base/reset';
 
 /**
- * Settings
+ * Settings. Only variables.
  */
 @import 'settings/buttons';
 @import 'settings/colors';
 @import 'settings/grid';
+@import 'settings/misc';
 @import 'settings/namespace';
 @import 'settings/spaces';
 @import 'settings/typography';
 
 /**
- * Mixins
+ * Helpers. Mixins and placeholders.
  */
-@import 'mixins/border-radius';
-@import 'mixins/buttons';
-@import 'mixins/colors';
-@import 'mixins/filters';
-@import 'mixins/gradients';
-@import 'mixins/grid';
-@import 'mixins/media';
-@import 'mixins/positioning';
-@import 'mixins/shapes';
-@import 'mixins/size';
-@import 'mixins/spaces';
-@import 'mixins/typography';
+@import 'helpers/border-radius';
+@import 'helpers/buttons';
+@import 'helpers/colors';
+@import 'helpers/filters';
+@import 'helpers/gradients';
+@import 'helpers/grid';
+@import 'helpers/hover';
+@import 'helpers/links';
+@import 'helpers/media';
+@import 'helpers/positioning';
+@import 'helpers/shapes';
+@import 'helpers/size';
+@import 'helpers/spaces';
+@import 'helpers/typography';
 
 /**
- * Utilities
+ * Utilities. Classes.
  */
 @import 'utilities/clearfix';
 @import 'utilities/floats';
 @import 'utilities/lists';
 @import 'utilities/spaces';
-@import 'utilities/typography';
+@import 'utilities/text';
 
 /**
- * Layout
+ * Layout. Classes.
  */
 @import 'layout/footer';
 @import 'layout/header';
 
 /**
- * Components
+ * Components. Classes.
  */
 @import 'components/buttons';
 @import 'components/forms';
@@ -58,6 +61,16 @@
 @import 'components/misc';
 @import 'components/tables';
 @import 'components/typography';
+
+/**
+ * Shame. Hacks.
+ */
+@import 'shame';
+
+/**
+ * Vendors.
+ */
+//@import 'vendor/bootstrap';
 
 /**
  * Partials
