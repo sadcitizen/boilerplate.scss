@@ -1,0 +1,11 @@
+/********************************
+ * Hover
+ ********************************/
+// Create pseudo-classes for `:hover`, `:active`, and `:focus`
+@mixin hover {
+    &:hover,
+    &:active,
+    &:focus {
+        @content;
+    }
+}
