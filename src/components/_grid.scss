@@ -1,25 +1,12 @@
-/**
+/********************************
  * Grid
- */
+ ********************************/
+@include grid($use-gutter);
 
-/**
- * Container
- */
-.container {
-    @extend %clearfix;
-    
-    &--fluid {
+.col {
+    @extend %column;
 
+    @if $use-gutter {
+        @extend %column-gutter;
     }
 }
-
-/**
- * Row
- */
-.row {
-    @include row();
-}
-
-/**
- * Column
- */

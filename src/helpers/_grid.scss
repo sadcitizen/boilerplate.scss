@@ -5,19 +5,73 @@
 /**
  * Column
  */
-@mixin col {
+%column {
     position: relative;
     display: block;
     float: left;
 }
 
+%column-gutter {
+    $padding: $grid-gutter;
+
+    padding-right: $padding;
+    padding-left: $padding;
+}
+
+@mixin columns($count: 1, $use-gutter: true) {
+    @extend %column;
+    width: percentage($count / $grid-columns);
+
+    @if $use-gutter {
+        @extend %column-gutter;
+    }
+}
+
 /**
  * Row
  */
-@mixin row($space: 0) {
-    $margin: $space / -2;
+@mixin row($use-gutter: true) {
+    @if $use-gutter {
+        $margin: $grid-gutter / -1;
+
+        margin-right: $margin;
+        margin-left: $margin;
+    }
 
     @extend %clearfix;
-    margin-left: $margin;
-    margin-right: $margin;
+}
+
+/**
+ * Offset
+ */
+@mixin offset($count) {
+    margin-left: percentage($count / $grid-columns);
+}
+
+/**
+ * Grid
+ */
+@mixin grid($use-gutter: true) {
+    $i: $grid-columns - 1;
+
+    @while $i > 0 {
+        .col-#{$i} {
+            @include columns($i, $use-gutter);
+
+            &.row {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+
+        .offset-#{$i} {
+            @include offset($i);
+        }
+
+        $i: $i - 1;
+    }
+
+    .row {
+        @include row($use-gutter);
+    }
 }

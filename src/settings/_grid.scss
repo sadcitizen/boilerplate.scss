@@ -2,4 +2,6 @@
  * Grid
  ********************************/
 $grid-columns: 12;
-$grid-gutter: 1px;
+$grid-gutter: 10px;
+
+$use-gutter: false !default;
