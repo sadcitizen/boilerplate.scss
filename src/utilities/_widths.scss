@@ -1,0 +1,15 @@
+/********************************
+ * Width utilities
+ ********************************/
+$width-start: 100;
+$width-step: 5;
+
+$width-i: $width-start;
+
+@while $width-i > 0 {
+    .w-#{$width-i} {
+        width: $width-i * 1%;
+    }
+
+    $width-i: $width-i - $width-step;
+}
