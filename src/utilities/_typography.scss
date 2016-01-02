@@ -5,49 +5,49 @@
 /**
  * Base
  */
-.#{$namespace}text {
+.text {
     @include text-size($text-size-md);
 }
 
 /**
  * Sizes
  */
-.#{$namespace}text--xxl {
+.text--xxl {
     @include text-size($text-size-xxl);
 }
 
-.#{$namespace}text--xl {
+.text--xl {
     @include text-size($text-size-xl);
 }
 
-.#{$namespace}text--lg {
+.text--lg {
     @include text-size($text-size-lg);
 }
 
-.#{$namespace}text--md {
+.text--md {
     @include text-size($text-size-md);
 }
 
-.#{$namespace}text--sm {
+.text--sm {
     @include text-size($text-size-sm);
 }
 
-.#{$namespace}text--xs {
+.text--xs {
     @include text-size($text-size-xs);
 }
 
 /**
  * Styles
  */
-.#{$namespace}text--regular { // ?
+.text--regular { // ?
     font-weight: normal;
 }
 
-.#{$namespace}text--bold { // ? strong, b
+.text--bold { // ? strong, b
     font-weight: bold;
 }
 
-.#{$namespace}text--italic { // ? em, i
+.text--italic { // ? em, i
     font-style: italic;
 }
 
@@ -55,7 +55,7 @@
  * Alignment
  */
 @each $direction in (left, center, right, justify) {
-    .#{$namespace}text--#{$direction} {
+    .text--#{$direction} {
         text-align: $direction;
     }
 }
@@ -64,7 +64,7 @@
  * Vertical alignment
  */
 @each $direction in (top, middle, bottom) {
-    .#{$namespace}text--#{$direction} {
+    .text--#{$direction} {
         text-align: $direction;
     }
 }
@@ -72,15 +72,15 @@
 /**
  * Decorations
  */
-.#{$namespace}text--strike { // s, del
+.text--strike { // s, del
     text-decoration: line-through;
 }
 
-.#{$namespace}text--overline {
+.text--overline {
     text-decoration: overline;
 }
 
-.#{$namespace}text--underline {
+.text--underline {
     text-decoration: underline;
 }
 
@@ -88,7 +88,7 @@
  * Transformations
  */
 @each $transform in (lowercase, uppercase, capitalize) {
-    .#{$namespace}text--#{$transform} {
+    .text--#{$transform} {
         text-transform: $transform;
     }
 }
@@ -96,11 +96,11 @@
 /**
  * Misc ????????????????? smallcaps, highlight
  */
-.#{$namespace}text--nowrap {
+.text--nowrap {
     white-space: nowrap;
 }
 
-.#{$namespace}text--truncate {
+.text--truncate {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -109,10 +109,10 @@
 /**
  * Variants
  */
-//.#{$namespace}text--primary {
-//
-//}
-//
-//.#{$namespace}text--secondary {
-//
-//}
+.text--primary {
+
+}
+
+.text--secondary {
+
+}

@@ -5,11 +5,11 @@
     list-style: none;
     padding-left: 0;
 }
-.#{$namespace}list--reset {
+.list--reset {
     @extend %list--reset;
 }
 
-.#{$namespace}list-inline {
+.list-inline {
     @extend %list--reset;
 
     > li {
@@ -21,7 +21,7 @@
  * Styles
  */
 @each $style in (disc, circle, square) {
-    .#{$namespace}list--#{$style} {
+    .list--#{$style} {
         list-style-type: $style;
     }
 }

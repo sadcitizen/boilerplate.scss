@@ -5,13 +5,13 @@
     $char: map-get(('top': 't', 'right': 'r', 'bottom': 'b', 'left': 'l'), $side);
 
     @if $type == margin {
-        .#{$namespace}m-#{$char}-#{$size / 1px} {
+        .m-#{$char}-#{$size / 1px} {
             margin-#{$side}: $size;
         }
     }
 
     @if $type == padding {
-        .#{$namespace}p-#{$char}-#{$size / 1px} {
+        .p-#{$char}-#{$size / 1px} {
             padding-#{$side}: $size;
         }
     }
