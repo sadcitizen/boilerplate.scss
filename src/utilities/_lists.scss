@@ -1,11 +1,11 @@
 /********************************
  * Lists
  ********************************/
-%list--reset {
+%list-reset {
     list-style: none;
     padding-left: 0;
 }
-.list--reset {
+.list-reset {
     @extend %list--reset;
 }
 
@@ -21,7 +21,7 @@
  * Styles
  */
 @each $style in (disc, circle, square) {
-    .list--#{$style} {
+    .list-#{$style} {
         list-style-type: $style;
     }
 }

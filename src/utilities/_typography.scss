@@ -3,51 +3,44 @@
  ********************************/
 
 /**
- * Base
- */
-.text {
-    @include text-size($text-size-md);
-}
-
-/**
  * Sizes
  */
-.text--xxl {
+.text-xxl {
     @include text-size($text-size-xxl);
 }
 
-.text--xl {
+.text-xl {
     @include text-size($text-size-xl);
 }
 
-.text--lg {
+.text-lg {
     @include text-size($text-size-lg);
 }
 
-.text--md {
+.text-md {
     @include text-size($text-size-md);
 }
 
-.text--sm {
+.text-sm {
     @include text-size($text-size-sm);
 }
 
-.text--xs {
+.text-xs {
     @include text-size($text-size-xs);
 }
 
 /**
  * Styles
  */
-.text--regular { // ?
+.text-regular { // ?
     font-weight: normal;
 }
 
-.text--bold { // ? strong, b
+.text-bold { // ? strong, b
     font-weight: bold;
 }
 
-.text--italic { // ? em, i
+.text-italic { // ? em, i
     font-style: italic;
 }
 
@@ -55,7 +48,7 @@
  * Alignment
  */
 @each $direction in (left, center, right, justify) {
-    .text--#{$direction} {
+    .text-#{$direction} {
         text-align: $direction;
     }
 }
@@ -64,7 +57,7 @@
  * Vertical alignment
  */
 @each $direction in (top, middle, bottom) {
-    .text--#{$direction} {
+    .text-#{$direction} {
         text-align: $direction;
     }
 }
@@ -72,15 +65,15 @@
 /**
  * Decorations
  */
-.text--strike { // s, del
+.text-strike { // s, del
     text-decoration: line-through;
 }
 
-.text--overline {
+.text-overline {
     text-decoration: overline;
 }
 
-.text--underline {
+.text-underline {
     text-decoration: underline;
 }
 
@@ -88,7 +81,7 @@
  * Transformations
  */
 @each $transform in (lowercase, uppercase, capitalize) {
-    .text--#{$transform} {
+    .text-#{$transform} {
         text-transform: $transform;
     }
 }
@@ -96,11 +89,11 @@
 /**
  * Misc ????????????????? smallcaps, highlight
  */
-.text--nowrap {
+.text-nowrap {
     white-space: nowrap;
 }
 
-.text--truncate {
+.text-truncate {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -109,10 +102,10 @@
 /**
  * Variants
  */
-.text--primary {
+.text-primary {
 
 }
 
-.text--secondary {
+.text-secondary {
 
 }

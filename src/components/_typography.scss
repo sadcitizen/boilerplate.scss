@@ -13,7 +13,7 @@ body {
 $headings: ('h1': $h1, 'h2': $h2, 'h3': $h3, 'h4': $h4, 'h5': $h5, 'h6': $h6);
 
 @each $key, $value in $headings {
-    #{$key}, .#{$namespace}#{$key} {
+    #{$key}, .#{$key} {
         @include text-size($value);
 
         @if map-has-key($value, 'margin-top') {
@@ -34,7 +34,7 @@ a {
     @extend %link;
 }
 
-.#{$namespace}link {
+.link {
     @extend %link;
 
     &--dotted {
@@ -49,7 +49,7 @@ a {
 /**
  * Paragraph
  */
-p, .#{$namespace}paragraph {
+p, .paragraph {
     margin-top: $paragraph-margin-top;
     margin-bottom: $paragraph-margin-bottom;
 }
@@ -86,7 +86,7 @@ dl {
     }
 }
 
-.#{$namespace}dl-inline {
+.dl-inline {
     @extend %clearfix;
 
     dt {
@@ -108,14 +108,14 @@ abbr[title] {
 }
 
 i, em {
-    @extend .#{$namespace}text--italic;
+    @extend .text-italic;
 }
 
 b, strong {
-    @extend .#{$namespace}text--bold;
+    @extend .text-bold;
 }
 
-small, .#{$namespace}small {
+small, .small {
     font-size: $small-font-size;
     line-height: 1;
 }
