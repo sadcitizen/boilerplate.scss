@@ -14,7 +14,7 @@
         border-right: ($width / 2) solid $background-color;
         border-left: ($width / 2) solid $background-color;
     }
-     
+
     @mixin border-x {
         border-top: ($height / 2) solid $background-color;
         border-bottom: ($height / 2) solid $background-color;
@@ -43,4 +43,9 @@
         border-right: $width solid $color;
         border-left: 0;
     }
- }
+}
+
+@mixin circle ($size) {
+    @@include size($size);
+    border-radius: 50%;
+}
