@@ -4,10 +4,8 @@
  * Outputs classes
  * .w-0 - .w-100
  ********************************/
-$width-start: 100;
-$width-step: 5;
 
-$width-i: $width-start;
+@import '../settings/widths';
 
 @while $width-i > 0 {
     .w-#{$width-i} {

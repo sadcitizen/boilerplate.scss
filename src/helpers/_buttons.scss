@@ -1,6 +1,9 @@
 /********************************
  * Buttons
  ********************************/
+
+@import '../settings/buttons';
+
 @mixin button-size($size) {
     padding: map-get($size, 'padding-vertical') map-get($size, 'padding-horizontal');
     font-size: map-get($size, 'font-size');
