@@ -2,6 +2,9 @@
   "name": "qs.scss",
   "version": "0.1.0",
   "description": "Каркас для системы стилей",
+  "scripts": {
+    "start": "node-sass ./src/styles.scss --output build"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/sadcitizen/qs.scss.git"
@@ -15,5 +18,7 @@
   "bugs": {
     "url": "https://github.com/sadcitizen/qs.scss/issues"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "node-sass": "^3.4.2"
+  }
 }
