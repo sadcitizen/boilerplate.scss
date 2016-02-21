@@ -1,0 +1,11 @@
+options:
+  merge-default-rules: false
+
+files:
+  include: 'src/**/*.s+(a|c)ss'
+
+rules:
+  indentation:
+    - 2
+    -
+      size: 4
