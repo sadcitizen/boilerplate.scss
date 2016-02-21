@@ -1,0 +1,14 @@
+options:
+  merge-default-rules: false
+
+files:
+  include: 'src/**/*.s+(a|c)ss'
+  ignore:
+    - 'src/base/_normalize.scss'
+    - 'src/vendor/**/*.*'
+
+rules:
+  indentation:
+    - 2
+    -
+      size: 4
