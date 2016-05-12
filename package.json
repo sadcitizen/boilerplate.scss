@@ -1,10 +1,9 @@
 {
   "name": "qs.scss",
   "version": "0.1.0",
-  "description": "Каркас для системы стилей",
+  "description": "scss boilerplate",
   "scripts": {
-    "start": "node-sass ./src/styles.scss --output build",
-    "test": "sass-lint -c .sass-lint.yml -v"
+    "build": "node-sass src/styles.scss --output build"
   },
   "repository": {
     "type": "git",
@@ -20,7 +19,6 @@
     "url": "https://github.com/sadcitizen/qs.scss/issues"
   },
   "devDependencies": {
-    "node-sass": "^3.4.2",
-    "sass-lint": "^1.5.0"
+    "node-sass": "^3.4.2"
   }
 }

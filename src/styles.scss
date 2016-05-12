@@ -1,80 +1,66 @@
-/********************************
- * QS.scss
- ********************************/
+@charset 'utf-8';
 
 /**
- * Base. Reset styles.
+ * Каркас стилей для верстки.
  */
-@import 'base/normalize';
-@import 'base/reset';
 
-/**
- * Settings. Only variables.
- */
-@import 'settings/buttons';
-@import 'settings/colors';
-@import 'settings/grid';
-@import 'settings/misc';
-@import 'settings/spaces';
-@import 'settings/typography';
+// 1. Variables. Переменные
+//@import 'variables/buttons';
+//@import 'variables/colors';
+//@import 'variables/grid';
+//@import 'variables/misc';
+//@import 'variables/spaces';
+//@import 'variables/typography';
 
-/**
- * Helpers. Mixins and placeholders.
- */
-@import 'helpers/border-radius';
-@import 'helpers/buttons';
-@import 'helpers/colors';
-@import 'helpers/filters';
-@import 'helpers/gradients';
-@import 'helpers/grid';
-@import 'helpers/hover';
-@import 'helpers/links';
-@import 'helpers/media';
-@import 'helpers/positioning';
-@import 'helpers/shapes';
-@import 'helpers/size';
-@import 'helpers/spaces';
-@import 'helpers/typography';
+// 2. Хелперы.
+//@import 'helpers/border-radius';
+//@import 'helpers/buttons';
+//@import 'helpers/colors';
+//@import 'helpers/filters';
+//@import 'helpers/gradients';
+//@import 'helpers/grid';
+//@import 'helpers/hover';
+//@import 'helpers/links';
+//@import 'helpers/media';
+//@import 'helpers/positioning';
+//@import 'helpers/shapes';
+//@import 'helpers/size';
+//@import 'helpers/spaces';
+//@import 'helpers/typography';
 
-/**
- * Utilities. Classes.
- */
-@import 'utilities/clearfix';
-@import 'utilities/floats';
-@import 'utilities/lists';
-@import 'utilities/spaces';
-@import 'utilities/states';
-@import 'utilities/typography';
-@import 'utilities/widths';
+// 3. Vendors.
+@import 'vendors/normalize';
 
-/**
- * Layout. Classes.
- */
-@import 'layout/footer';
-@import 'layout/header';
+// 4. Base.
+//@import 'base/reset';
 
-/**
- * Components. Classes.
- */
-@import 'components/buttons';
-@import 'components/forms';
-@import 'components/grid';
-@import 'components/images';
-@import 'components/misc';
-@import 'components/tables';
-@import 'components/typography';
+// 5. Utilities.
+//@import 'utilities/clearfix';
+//@import 'utilities/floats';
+//@import 'utilities/lists';
+//@import 'utilities/spaces';
+//@import 'utilities/states';
+//@import 'utilities/typography';
+//@import 'utilities/widths';
 
-/**
- * Shame. Hacks.
- */
+// 6. Layout.
+//@import 'layout/footer';
+//@import 'layout/header';
+
+// 7. Components.
+//@import 'components/buttons';
+//@import 'components/forms';
+//@import 'components/grid';
+//@import 'components/images';
+//@import 'components/misc';
+//@import 'components/tables';
+//@import 'components/typography';
+
+// 8. Shame.
 @import 'shame';
 
-/**
- * Vendors.
- */
-//@import 'vendor/bootstrap';
+// 9. Partials.
+//@import 'partials/sample';
 
-/**
- * Partials
- */
-@import 'partials/sample';
+// 10. Themes.
+//@import 'themes/default';
