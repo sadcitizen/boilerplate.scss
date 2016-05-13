@@ -1,0 +1,9 @@
+/**
+ * Примесь, которая обрезает текст и дополняет его многоточием в случае,
+ * когда текст полностью не помещается в контейнер.
+ */
+@mixin text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
