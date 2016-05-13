@@ -1,12 +1,9 @@
-/********************************
- * Sizing shortcuts
- ********************************/
+/**
+ * Size. Примесь, которая задает размер контейнеру.
+ * @param $width Ширина контейнера.
+ * @param $height Высота контейнера.
+ */
 @mixin size($width, $height: $width) {
-    @if $width == auto or (type-of($width) == number and not unitless($width)) {
-        width: $width;
-    }
-
-    @if $height == auto or (type-of($height) == number and not unitless($height)) {
-        height: $height;
-    }
+    width: $width;
+    height: $height;
 }
