@@ -1,7 +1,6 @@
-/********************************
- * Hover
- ********************************/
-// Create pseudo-classes for `:hover`, `:active`, and `:focus`
+/**
+ * Hover. Примесь, которая задает единый стиль для постояний `hover`, `active` и `focus`.
+ */
 @mixin hover {
     &:hover,
     &:active,
