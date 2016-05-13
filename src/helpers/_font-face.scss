@@ -1,0 +1,16 @@
+/**
+ * Font-face. Примесь, которая подключает кастомный шрифт.
+ * @param $name Имя шрифта.
+ * @param $path Путь до файла шрифта.
+ * @param $weight Насыщенность шрифта.
+ * @param $style Начертание шрифта.
+ */
+@mixin font-face($name, $path, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: $name;
+        src: url('#{$path}.eot');
+        src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
