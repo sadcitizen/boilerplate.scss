@@ -1,6 +1,6 @@
-/********************************
- * Floats
- ********************************/
+/**
+ * Floats.
+ */
 @each $float in (left, right, none) {
     .float-#{$float} {
         float: $float;

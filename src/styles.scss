@@ -1,10 +1,10 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 /**
  * Каркас стилей для верстки.
  */
 
-// 1. Variables. Переменные
+// 1. Variables. Переменные.
 //@import 'variables/buttons';
 //@import 'variables/colors';
 //@import 'variables/grid';
@@ -12,11 +12,15 @@
 //@import 'variables/spaces';
 //@import 'variables/typography';
 
-// 2. Хелперы.
+// 2. Helpers. Примеси, плейсхолдеры и функции.
+@import "helpers/clearfix";
+@import "helpers/font-face";
+@import "helpers/placeholder";
+@import "helpers/size";
+
 //@import 'helpers/border-radius';
 //@import 'helpers/buttons';
 //@import 'helpers/colors';
-//@import 'helpers/filters';
 //@import 'helpers/gradients';
 //@import 'helpers/grid';
 //@import 'helpers/hover';
@@ -24,17 +28,16 @@
 //@import 'helpers/media';
 //@import 'helpers/positioning';
 //@import 'helpers/shapes';
-//@import 'helpers/size';
 //@import 'helpers/spaces';
 //@import 'helpers/typography';
 
-// 3. Vendors.
-@import 'vendors/normalize';
+// 3. Vendors. Сторонние библиотеки.
+@import "vendors/normalize";
 
 // 4. Base.
 //@import 'base/reset';
 
-// 5. Utilities.
+// 5. Utilities. Классы-утилиты.
 //@import 'utilities/clearfix';
 //@import 'utilities/floats';
 //@import 'utilities/lists';
@@ -43,11 +46,12 @@
 //@import 'utilities/typography';
 //@import 'utilities/widths';
 
-// 6. Layout.
-//@import 'layout/footer';
-//@import 'layout/header';
+// 6. Layout. Макет.
+@import "layout/document";
+@import "layout/footer";
+@import "layout/header";
 
-// 7. Components.
+// 7. Components. Компоненты.
 //@import 'components/buttons';
 //@import 'components/forms';
 //@import 'components/grid';
@@ -56,11 +60,11 @@
 //@import 'components/tables';
 //@import 'components/typography';
 
-// 8. Shame.
+// 8. Shame. Файл позора.
 @import 'shame';
 
 // 9. Partials.
 //@import 'partials/sample';
 
-// 10. Themes.
+// 10. Themes. Темы.
 //@import 'themes/default';

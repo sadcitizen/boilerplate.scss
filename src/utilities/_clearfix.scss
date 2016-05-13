@@ -1,19 +1,6 @@
-/********************************
- * Clearfix
- ********************************/
-%clearfix {
-
-    &:before,
-    &:after {
-        content: '';
-        display: table;
-    }
-
-    &:after {
-        clear: both;
-    }
-}
-
+/**
+ * Clearfix.
+ */
 .clearfix {
     @extend %clearfix;
 }
