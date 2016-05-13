@@ -13,20 +13,24 @@
 //@import 'variables/typography';
 
 // 2. Helpers. Примеси, плейсхолдеры и функции.
+@import "helpers/border-radius";
 @import "helpers/clearfix";
 @import "helpers/font-face";
+@import "helpers/hover";
 @import "helpers/placeholder";
+@import "helpers/position";
 @import "helpers/size";
+@import "helpers/widths";
 
-//@import 'helpers/border-radius';
+
 //@import 'helpers/buttons';
 //@import 'helpers/colors';
 //@import 'helpers/gradients';
 //@import 'helpers/grid';
-//@import 'helpers/hover';
+
 //@import 'helpers/links';
 //@import 'helpers/media';
-//@import 'helpers/positioning';
+
 //@import 'helpers/shapes';
 //@import 'helpers/spaces';
 //@import 'helpers/typography';
@@ -44,7 +48,6 @@
 //@import 'utilities/spaces';
 //@import 'utilities/states';
 //@import 'utilities/typography';
-//@import 'utilities/widths';
 
 // 6. Layout. Макет.
 @import "layout/document";

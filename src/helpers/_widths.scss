@@ -1,0 +1,28 @@
+/**
+ * Примесь, которая генерирует сетку классов, задающих ширину элемента.
+ * @param $start Начальное значение ширины в процентах.
+ * @param $finish Конечное значение ширины в процентах.
+ * @param $step Шаг.
+ *
+ * @example
+ * @include widths(2, 4, 2);
+ *
+ * .w-2 {
+ *     width: 2%;
+ * }
+ *
+ * .w-4 {
+ *     width: 4%;
+ * }
+ */
+@mixin widths($start, $finish, $step) {
+    $i: $start;
+
+    @while $i <= $finish {
+        .w-#{$i} {
+            width: $i * 1%;
+        }
+
+        $i: $i + $step;
+    }
+}
