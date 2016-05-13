@@ -1,0 +1,48 @@
+/**
+ * Position. Примесь, которая задает позиционирование элемента.
+ * @param $position {absolute|fixed|relative|static|inherit} Способ позиционирования элемента.
+ * @param $args Список отступов.
+ *
+ * @example
+ * .text {
+ *     @include position(absolute, top 0 left 10px);
+ * }
+ *
+ * .text {
+ *     position: absolute;
+ *     top: 0;
+ *     left: 10px;
+ * }
+ */
+@mixin position($position, $args) {
+    position: $position;
+
+    @each $o in top right bottom left {
+        $i: index($args, $o);
+
+        @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number  {
+            #{$o}: nth($args, $i + 1);
+        }
+    }
+}
+
+/**
+ * Примесь, которая позволяет в сокращенной форме задать position: absolute;
+ */
+@mixin absolute($args) {
+    @include position(absolute, $args);
+}
+
+/**
+ * Примесь, которая позволяет в сокращенной форме задать position: fixed;
+ */
+@mixin fixed($args) {
+    @include position(fixed, $args);
+}
+
+/**
+ * Примесь, которая позволяет в сокращенной форме задать position: relative;
+ */
+@mixin relative($args) {
+    @include position(relative, $args);
+}
