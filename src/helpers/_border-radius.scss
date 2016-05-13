@@ -1,23 +1,22 @@
-/********************************
- * Single side border-radius
- ********************************/
+/**
+ * Border radius. Примесь, которая задает радиус углов у контейнера только с одной стороны.
+ * @param $side {top|right|bottom|left} Сторона контейнера.
+ * @param $radius Радиус скругления.
+ */
+@mixin border-radius($side, $radius) {
+    @if $side == top or $side == right {
+        border-top-right-radius: $radius;
+    }
 
-@mixin border-top-radius($radius) {
-    border-top-right-radius: $radius;
-    border-top-left-radius: $radius;
-}
+    @if $side == top or $side == left {
+        border-top-left-radius: $radius;
+    }
 
-@mixin border-right-radius($radius) {
-    border-bottom-right-radius: $radius;
-    border-top-right-radius: $radius;
-}
+    @if $side == bottom or $side == right {
+        border-bottom-right-radius: $radius;
+    }
 
-@mixin border-bottom-radius($radius) {
-    border-bottom-right-radius: $radius;
-    border-bottom-left-radius: $radius;
-}
-
-@mixin border-left-radius($radius) {
-    border-bottom-left-radius: $radius;
-    border-top-left-radius: $radius;
+    @if $side == bottom or $side == left {
+        border-bottom-left-radius: $radius;
+    }
 }
