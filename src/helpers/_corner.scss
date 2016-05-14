@@ -1,0 +1,30 @@
+/**
+ * Примесь, которая создает треугольник.
+ * @param $direction {top-right|bottom-right|bottom-left|top-left} Направление треугольника.
+ * @param $width Ширина треугольника.
+ * @param $height Высота треугольника.
+ * @param $color Цвет треугольника.
+ * @param $background-color Цвет родительского элемента.
+ */
+@mixin corner($direction, $width, $height, $color, $background-color: transparent) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: ($height / 2) ($width / 2);
+
+    @if $direction == top-right {
+        border-color: $color $color $background-color $background-color;
+    }
+
+    @if $direction == bottom-right {
+        border-color: $background-color $color $color $background-color;
+    }
+
+    @if $direction == bottom-left {
+        border-color: $background-color $background-color $color $color;
+    }
+
+    @if $direction == top-left {
+        border-color: $color $background-color $background-color $color;
+    }
+}
