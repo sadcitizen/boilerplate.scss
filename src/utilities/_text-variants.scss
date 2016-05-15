@@ -1,0 +1,56 @@
+/**
+ * Text variants. Классы-утилиты, которые описывают разные варианты текста.
+ */
+// Размеры.
+// Размеры задаются согласно сетке размеров: `xxl`, `xl`, `lg`, `md`, `sm` и `xs`.
+// Для указания размера лучше пользоваться примесью `text-size()`.
+.text-size-xxl {}
+
+.text-size-xl {}
+
+.text-size-lg {}
+
+.text-size-md {}
+
+.text-size-sm {}
+
+.text-size-xs {}
+
+// Начертания.
+// Можно использовать как `font-weight` и `font-styles`, так и разные начертания
+// из внешних шрифтов.
+.text-regular {}
+
+.text-bold {}
+
+.text-italic {}
+
+// Горизонтальное выравнивание.
+@each $direction in (left, center, right, justify) {
+    .text-#{$direction} {
+        text-align: $direction;
+    }
+}
+
+// Вертикальное выравнивание.
+@each $direction in (top, middle, bottom) {
+    .text-#{$direction} {
+        text-align: $direction;
+    }
+}
+
+// Преобразования
+@each $transform in (lowercase, uppercase, capitalize) {
+    .text-#{$transform} {
+        text-transform: $transform;
+    }
+}
+
+// Выделения по цвету.
+// Название выбирается согласно цвету из палитры.
+.text-primary {}
+.text-secondary {}
+.text-info {}
+.text-danger {}
+.text-default {}
+.text-success {}

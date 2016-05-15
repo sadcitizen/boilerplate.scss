@@ -1,0 +1,9 @@
+/**
+ * List-variants. Правила для списков.
+ */
+// Стили маркеров.
+@each $style in (disc, circle, square) {
+    .list-#{$style} {
+        list-style-type: $style;
+    }
+}
