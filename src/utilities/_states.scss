@@ -1,12 +1,8 @@
-/********************************
-* States
-********************************/
+/**
+ * States. Классы-утилиты для состояний.
+ */
 .is-hidden {
     display: none !important;
-}
-
-.is-disabled {
-    cursor: default;
 }
 
 .overflow-hidden {
