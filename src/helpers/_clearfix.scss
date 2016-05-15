@@ -1,7 +1,7 @@
 /**
  * Clearfix.
  */
-%clearfix {
+@mixin clearfix() {
     &:before,
     &:after {
         content: "";
