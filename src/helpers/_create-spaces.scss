@@ -1,0 +1,30 @@
+/**
+ * Примесь, которая задает сетку внешних или внутренних отступов.
+ * @param $type {padding|margin} Тип отступа.
+ * @param $start Начальное значение для сетки.
+ * @param $finish Конечно значение.
+ * @param $step Шаг.
+ *
+ * @example
+ *
+ * @include create-spaces(margin, 0, 10, 5);
+ * Создаст сетку:
+ * .m-t-0, .m-r-0, .m-b-0, .m-l-0,
+ * .m-t-5, .m-r-5, .m-b-5, .m-l-5,
+ * .m-t-10, .m-r-10, .m-b-10, .m-l-10
+ */
+@mixin create-spaces($type, $start, $finish, $step) {
+    $i: $start;
+    $sides: (top: 't', right: 'r', bottom: 'b', left: 'l');
+    $types: (padding: 'p', margin: 'm');
+
+    @while $i <= $finish {
+        @each $side in (top, right, bottom, left) {
+            .#{map-get($types, $type)}-#{map-get($sides, $side)}-#{$i} {
+                #{$type}-#{$side}: $i * 1px;
+            }
+        }
+
+        $i: $i + $step;
+    }
+}
