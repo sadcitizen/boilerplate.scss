@@ -1,0 +1,13 @@
+/**
+ * Примесь, которая задает размер тексту.
+ * @param $size Карта с двумя параметрами: `font-size` и `line-height`.
+ */
+@mixin text-size($size) {
+    @if map-has-key($size, 'font-size') {
+        font-size: map-get($size, 'font-size');
+    }
+
+    @if map-has-key($size, 'line-height') {
+        $line-height: map-get($size, 'line-height');
+    }
+}
