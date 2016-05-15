@@ -1,0 +1,55 @@
+// -----------------------------------------------------------------------------
+// Animations
+// -----------------------------------------------------------------------------
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes shake {
+    from,
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate3d(5px, 0, 0);
+    }
+}
