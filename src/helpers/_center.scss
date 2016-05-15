@@ -1,0 +1,29 @@
+/**
+ * Примесь, которая вертикально и горизонтально центрирует элемент
+ * относительно родительского контейнера.
+ * @param $width Ширина элемента.
+ * @param $height Высота элемента.
+ */
+@mixin center($width: null, $height: null) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    @if $width == null and $height == null {
+        transform: translate(-50%, -50%);
+    } @else {
+        @if $width != null {
+            width: $width;
+            margin-left: -($width / 2);
+        } @else {
+            transform: translateX(-50%);
+        }
+
+        @if $height != null {
+            height: $height;
+            margin-top: -($height / 2);
+        } @else {
+            transform: translateY(-50%);
+        }
+    }
+}
