@@ -5,7 +5,7 @@
  * @param $step Шаг.
  *
  * @example
- * @include widths(2, 4, 2);
+ * @include create-widths(2, 4, 2);
  *
  * .w-2 {
  *     width: 2%;
@@ -15,7 +15,7 @@
  *     width: 4%;
  * }
  */
-@mixin widths($start, $finish, $step) {
+@mixin create-widths($start, $finish, $step) {
     $i: $start;
 
     @while $i <= $finish {
