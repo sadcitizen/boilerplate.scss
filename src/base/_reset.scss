@@ -1,12 +1,19 @@
-/********************************
- * Reset styles
- ********************************/
+/**
+ * Дополнительный к normalize сброс стилей.
+ */
 * { // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-    &, 
+    &,
     &:after,
     &:before {
         box-sizing: border-box;
     }
+}
+
+html {
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 
 ul, ol {
@@ -30,7 +37,7 @@ blockquote, q {
 
     &:after,
     &:before {
-        content: '';
+        content: "";
         content: none;
     }
 }
