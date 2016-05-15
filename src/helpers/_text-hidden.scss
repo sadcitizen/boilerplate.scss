@@ -1,0 +1,9 @@
+/**
+ * Примесь, которая визуально скрывает текст внутри элемента.
+ */
+@mixin text-hidden() {
+    overflow: hidden;
+    padding: 0;
+    text-indent: 101%;
+    white-space: nowrap;
+}
