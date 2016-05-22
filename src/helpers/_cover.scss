@@ -1,0 +1,6 @@
+/**
+ * Примесь, которая растягивает элемент на всего родителя.
+ */
+@mixin cover($position: absolute, $top: 0, $right: $top, $bottom: $top, $left: $right) {
+    @include position($position, $top, $right, $bottom, $left);
+}
