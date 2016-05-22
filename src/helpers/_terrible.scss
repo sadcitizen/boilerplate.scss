@@ -1,0 +1,24 @@
+/**
+ * Terrible. TRBL. Примесь, которая задает значения свойств для четырех сторон: top, right, bottom, left.
+ * @param $prefix Префикс свойства.
+ * @param $top Значения свойства для стороны top.
+ * @param $right Значения свойства для стороны right.
+ * @param $bottom Значения свойства для стороны bottom.
+ * @param $left Значения свойства для стороны left.
+ *
+ * @example
+ * .text {
+ *    @include terrible('margin-', 1px, 2px, 3px);
+ * }
+ *
+ * .text {
+ *    margin-top: 1px;
+ *    margin-right: 2px;
+ *    margin-bottom: 3px;
+ * }
+ */
+@mixin terrible($prefix: null, $top: null, $right: null, $bottom: null, $left: null) {
+    @each $side in (top $top, right $right, bottom $bottom, left $left) {
+        #{$prefix}#{nth($side, 1)}: nth($side, 2);
+    }
+}

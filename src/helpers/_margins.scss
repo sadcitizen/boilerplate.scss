@@ -1,0 +1,6 @@
+/**
+ * Margins. Примесь задает внешние отступы у элемента.
+ */
+@mixin margins($args...) {
+    @include terrible('margin-', $args...);
+}

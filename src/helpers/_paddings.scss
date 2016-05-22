@@ -1,0 +1,6 @@
+/**
+ * Paddings. Примесь задает внутренние поля элемента.
+ */
+@mixin paddings($args...) {
+    @include terrible('padding-', $args...);
+}

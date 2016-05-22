@@ -14,35 +14,28 @@
  *     left: 10px;
  * }
  */
-@mixin position($position, $args) {
+@mixin position($position, $args...) {
+    @include terrible(null, $args...);
     position: $position;
-
-    @each $o in top right bottom left {
-        $i: index($args, $o);
-
-        @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number  {
-            #{$o}: nth($args, $i + 1);
-        }
-    }
 }
 
 /**
  * Примесь, которая позволяет в сокращенной форме задать position: absolute;
  */
-@mixin absolute($args) {
-    @include position(absolute, $args);
+@mixin absolute($args...) {
+    @include position(absolute, $args...);
 }
 
 /**
  * Примесь, которая позволяет в сокращенной форме задать position: fixed;
  */
 @mixin fixed($args) {
-    @include position(fixed, $args);
+    @include position(fixed, $args...);
 }
 
 /**
  * Примесь, которая позволяет в сокращенной форме задать position: relative;
  */
 @mixin relative($args) {
-    @include position(relative, $args);
+    @include position(relative, $args...);
 }
