@@ -1,46 +1,100 @@
-/********************************
- * Buttons
+/**
+ * Buttons. Кнопки.
  *
- * States:
- * - normal
- * - hover
- * - active
- * - disabled
- ********************************/
-.btn {
+ * Кнопки создаются комбинацией из двух примесей: `button-size`, которая задает размер кнопки,
+ * и `button-variant`, которая задает тему кнопки.
+ * Например: <button class="button button--primary button--xl">Кнопка</button>
+ *
+ * Состояния кнопки:
+ * - normal - обычное состояние
+ * - hover - над кнопкой курсор
+ * - focus - фокус на кнопке
+ * - active - кнопка нажата
+ * - disabled - кнопка неактивна
+ * - progress - указывает на какой-то процесс
+ */
+.button {
+    position: relative;
+    display: inline-block;
+    border-style: solid;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    overflow: visible;
 
-    // States
+    // Состояния
     &:hover {
 
     }
 
-    &:active,
     &:focus {
 
     }
 
-    &[disabled] {
+    &:active {
 
     }
 
-    // Sizes
-    &--xl { // .btn--xl
-        @include button-size($btn-size-xl);
+    &[disabled],
+    &.is-disabled {
+
     }
 
-    &--lg { // .btn--lg
-        @include button-size($btn-size-xl);
+    &.is-progress {
+
     }
 
-    &--md { // .btn--md
-        @include button-size($btn-size-md);
+    // Размеры
+    &--xxl { // .button--xxl
+        //@include button-size($button-size-xxl);
     }
 
-    &--sm { // .btn--sm
-        @include button-size($btn-size-sm);
+    &--xl { // .button--xl
+        //@include button-size($button-size-xl);
     }
 
-    &--xs { // .btn--xs
-        @include button-size($btn-size-xs);
+    &--lg { // .button--lg
+        //@include button-size($button-size-xl);
+    }
+
+    &--md { // .button--md
+        //@include button-size($button-size-md);
+    }
+
+    &--sm { // .button--sm
+        //@include button-size($button-size-sm);
+    }
+
+    &--xs { // .button--xs
+        //@include button-size($button-size-xs);
+    }
+
+    // Вариации.
+    &--primary { // .button--primary
+        //@include button-variant($button-variant-primary);
+    }
+
+    &--success { // .button--success
+        //@include button-variant($button-variant-success);
+    }
+
+    &--danger { // .button--danger
+        //@include button-variant($button-variant-danger);
+    }
+
+    &--ghost { // .button--ghost
+        //@include button-variant($button-variant-ghost);
+    }
+
+    &--link { // .button--link
+        //@include button-variant($button-variant-link);
+    }
+
+    // Модификации
+    &--icon { // .button--icon
+
     }
 }
