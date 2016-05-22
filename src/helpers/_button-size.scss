@@ -1,0 +1,17 @@
+/**
+ * Присесь, которая задает размер кнопки.
+ * Размер кнопки представляет собой Map с полями:
+ * - border-radius - Радиус скругления углов.
+ * - border-width - Толщина рамки.
+ * - padding-vertical - Вертикальные поля.
+ * - padding-horizontal - Горизонтальные поля.
+ * - font-size - Размер шрифта надписи.
+ * - line-height - Высота строки надписи.
+ */
+@mixin button-size($size) {
+    border-width: map-get($size, 'border-width');
+    border-radius: map-get($size, 'border-radius');
+    padding: map-get($size, 'padding-vertical') map-get($size, 'padding-horizontal');
+    font-size: map-get($size, 'font-size');
+    line-height: map-get($size, 'line-height');
+}

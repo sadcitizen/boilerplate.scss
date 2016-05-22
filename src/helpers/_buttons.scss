@@ -1,13 +1,3 @@
-/********************************
- * Buttons
- ********************************/
-@mixin button-size($size) {
-    padding: map-get($size, 'padding-vertical') map-get($size, 'padding-horizontal');
-    font-size: map-get($size, 'font-size');
-    line-height: map-get($size, 'line-height');
-    border-radius: map-get($size, 'border-radius');
-}
-
 @mixin button-variant($variant) {
     $default-text-color: map-get($variant, 'default-text-color');
     $default-background-color: map-get($variant, 'default-background-color');
