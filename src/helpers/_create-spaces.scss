@@ -9,9 +9,9 @@
  *
  * @include create-spaces(margin, 0, 10, 5);
  * Создаст сетку:
- * .m-t-0, .m-r-0, .m-b-0, .m-l-0,
- * .m-t-5, .m-r-5, .m-b-5, .m-l-5,
- * .m-t-10, .m-r-10, .m-b-10, .m-l-10
+ * .mt-0, .mr-0, .mb-0, .ml-0,
+ * .mt-5, .mr-5, .mb-5, .ml-5,
+ * .mt-10, .mr-10, .mb-10, .ml-10
  */
 @mixin create-spaces($type, $start, $finish, $step) {
     $i: $start;
@@ -20,7 +20,7 @@
 
     @while $i <= $finish {
         @each $side in (top, right, bottom, left) {
-            .#{map-get($types, $type)}-#{map-get($sides, $side)}-#{$i} {
+            .#{map-get($types, $type)}#{map-get($sides, $side)}-#{$i} {
                 #{$type}-#{$side}: $i * 1px;
             }
         }
