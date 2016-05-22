@@ -1,0 +1,6 @@
+/**
+ * Функция, которая смещивает цвет с белым цветом, делая его светлее.
+ */
+@function tint($color, $percent) {
+    @return mix(white, $color, $percent);
+}

@@ -1,0 +1,6 @@
+/**
+ * Функция, которая смещивает цвет с черным цветом, делая его темнее.
+ */
+@function shade($color, $percent) {
+    @return mix(black, $color, $percent);
+}
