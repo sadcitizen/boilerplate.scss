@@ -1,0 +1,8 @@
+/**
+ * Примесь, которая задает цвета для элемента согласно переданной Map.
+ */
+@mixin box-color($color) {
+    border-color: map-get($color, 'border-color');
+    background-color: map-get($color, 'background-color');
+    color: map-get($color, 'text-color');
+}

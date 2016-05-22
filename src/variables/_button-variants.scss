@@ -1,0 +1,30 @@
+/**
+ * Темы для кнопок.
+ */
+$button-variant-primary: (
+    'normal': (
+        'text-color': #cccccc,
+        'background-color': #cccccc,
+        'border-color': #cccccc
+    ),
+    'hover': (
+        'text-color': #cccccc,
+        'background-color': #cccccc,
+        'border-color': #cccccc
+    ),
+    'focus': (
+        'text-color': #cccccc,
+        'background-color': #cccccc,
+        'border-color': #cccccc
+    ),
+    'active': (
+        'text-color': #cccccc,
+        'background-color': #cccccc,
+        'border-color': #cccccc
+    ),
+    'disabled': (
+        'text-color': #cccccc,
+        'background-color': #cccccc,
+        'border-color': #cccccc
+    )
+);

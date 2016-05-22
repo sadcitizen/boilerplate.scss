@@ -1,0 +1,32 @@
+/**
+ * Присесь, которая задает внешний вид кнопки.
+ */
+@mixin button-variant($variant) {
+    @if (map-has-key($variant, 'normal')) {
+        @include box-color(map-get($variant, 'normal'));
+    }
+
+    @if (map-has-key($variant, 'hover')) {
+        &:hover {
+            @include box-color(map-get($variant, 'hover'));
+        }
+    }
+
+    @if (map-has-key($variant, 'focus')) {
+        &:focus {
+            @include box-color(map-get($variant, 'focus'));
+        }
+    }
+    @if (map-has-key($variant, 'active')) {
+        &:active {
+            @include box-color(map-get($variant, 'active'));
+        }
+    }
+
+    @if (map-has-key($variant, 'disabled')) {
+        &[disabled],
+        &.is-disabled {
+            @include box-color(map-get($variant, 'disabled'));
+        }
+    }
+}
