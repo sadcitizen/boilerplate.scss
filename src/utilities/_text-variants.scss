@@ -35,7 +35,7 @@
 // Вертикальное выравнивание.
 @each $direction in (top, middle, bottom) {
     .text-#{$direction} {
-        text-align: $direction;
+        vertical-align: $direction;
     }
 }
 
