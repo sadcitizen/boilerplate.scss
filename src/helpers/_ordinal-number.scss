@@ -1,0 +1,39 @@
+/********************************
+ * Ordinal numbers
+ ********************************/
+@mixin first($num: 1) {
+    &:nth-child(-n + #{$num}) {
+        @content;
+    }
+}
+
+@mixin last($num: 1) {
+    &:nth-last-child(-n + #{$num}) {
+        @content;
+    }
+}
+
+@mixin first-last() {
+    &:first-child,
+    &:last-child {
+        @content;
+    }
+}
+
+@mixin every($num: 2) {
+    &:nth-child(#{$num}n) {
+        @content;
+    }
+}
+
+@mixin even() {
+    &:nth-child(even) {
+        @content;
+    }
+}
+
+@mixin odd() {
+    &:nth-child(odd) {
+        @content;
+    }
+}
