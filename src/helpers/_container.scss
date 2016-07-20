@@ -1,0 +1,9 @@
+/**
+ * Примесь для контейнера.
+ * Чистит поток блоков, указывает родительский контейнер для потомков с `position: absolute`.
+ */
+@mixin container() {
+    @include clearfix();
+    display: block;
+    position: relative;
+}
